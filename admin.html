@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin | Voied Store</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Admin Panel</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- Login Form -->
+    <section id="login-section">
+      <h2>Admin Login</h2>
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <input type="checkbox" id="rememberMe" />
+      <label for="rememberMe">احفظ بيانات تسجيل الدخول علي هذا الجهاز</label>
+      <button id="loginBtn">Login</button>
+      <p id="loginMsg" style="color:red;"></p>
+    </section>
+
+    <!-- Admin Dashboard -->
+    <section id="admin-section" style="display:none;">
+      <h2>Add Product</h2>
+      <input type="text" id="name" placeholder="Product Name">
+      <input type="number" id="price" placeholder="Price">
+      <input type="text" id="category" placeholder="Category">
+      <textarea id="description" placeholder="Description"></textarea>
+      <input type="file" id="image-file" accept="image/*" />
+      <p>Or enter Cloudinary URL:</p>
+      <input type="text" id="image-url" placeholder="https://res.cloudinary.com/...">
+      <input type="file" id="image" accept="image/*">
+
+      <button id="addBtn">Add Product</button>
+      <p id="msg" style="color:green;"></p>
+      
+
+      <h2>Existing Products</h2>
+      <div id="products-container" class="grid"></div>
+    </section>
+
+  </main>
+
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>

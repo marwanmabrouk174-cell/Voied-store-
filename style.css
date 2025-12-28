@@ -1,0 +1,122 @@
+/* --- Base --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F7F7F7; /* خلفية ثانوية */
+  color: #333333;      /* نص رصاصي غامق */
+}
+
+/* --- Navbar --- */
+.navbar {
+  height: 100px;
+  background-color: #800020; /* النبيتي */
+  color: white;
+  padding: 10px ;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  
+}
+.logo {
+  height: 100px;
+  margin-left: auto;
+}
+.loading-spinner {
+  border: 8px solid #f3f3f3; /* خلفية الـ spinner */
+  border-top: 8px solid #800020; /* اللون الأساسي للنبيتي */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto; /* توسيط على الصفحة */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* --- Container --- */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* --- Grid --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* --- Product Card --- */
+.product-card {
+  background: #FFFFFF;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* --- Inputs and Buttons --- */
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  background-color: #800020; /* النبيتي */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #660018; /* داكن شوية عند hover */
+}
+
+/* --- Headings --- */
+h1, h2, h3 {
+  color: #333333;
+}
+
+/* --- Optional --- */
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+.buy-btn {
+  background-color: #800020; /* النبيتي */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.buy-btn:hover {
+  background-color: #660018;
+}
