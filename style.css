@@ -9,19 +9,15 @@ body {
 
 /* --- Navbar --- */
 .navbar {
-  height: 100px;
-  background-color: #800020; /* النبيتي */
-  color: white;
-  padding: 10px ;
-  font-size: 1.2em;
-  display: flex;
-  align-items: center;
-  
+  min-height: 70px;
+  height: auto;
+  padding: 10px 15px;
+  flex-wrap: wrap;
 }
 .logo {
-  height: 100px;
-  margin-left: auto;
+  height: 60px;
 }
+
 .loading-spinner {
   border: 8px solid #f3f3f3; /* خلفية الـ spinner */
   border-top: 8px solid #800020; /* اللون الأساسي للنبيتي */
