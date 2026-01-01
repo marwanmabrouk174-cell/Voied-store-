@@ -1,4 +1,8 @@
-body { font-family: Arial; background: #f4f4f4; padding: 20px; }
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  padding: 20px; 
+}
 .form input, textarea, button {
   display: block;
   width: 300px;
@@ -12,12 +16,19 @@ body { font-family: Arial; background: #f4f4f4; padding: 20px; }
   width: 200px;
   display: inline-block;
 }
-.card img { width: 100%; }
+.card img {
+  width: 100%; 
+}
 button {
   background: #7b1e3a;
   color: white;
   border: none;
   cursor: pointer;
 }
-.hidden { display: none; }
-.box { max-width: 400px; margin: auto; }
+.hidden { 
+  display: none; 
+}
+.box {
+  max-width: 400px;
+  margin: auto;
+}
