@@ -146,9 +146,11 @@ const renderProducts = async () => {
     
     // حذف المنتج
     card.querySelector(".delete-btn").addEventListener("click", async () => {
-      await deleteDoc(doc(db, "products", product.id));
-      renderProducts();
-    });
+    if(confirm(`Are you sure you want to delete "${data.name}"?`)){
+    await deleteDoc(doc(db, "products", product.id));
+    renderProducts();
+  }
+});
     
     container.appendChild(card);
   });
