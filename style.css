@@ -9,14 +9,14 @@ body {
 
 /* --- Navbar --- */
 .navbar {
-  min-height: 70px;
-  height: auto;
+  height: 100px;
   background-color: #800020; /* النبيتي */
   color: white;
-  padding: 10px 15px;
-  flex-wrap: wrap;
+  padding: 10px ;
+  font-size: 1.2em;
   display: flex;
   align-items: center;
+  
 }
 .logo {
   height: 100px;
