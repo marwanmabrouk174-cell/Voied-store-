@@ -46,8 +46,8 @@ body {
 
 /* صورة المنتج */
 .product-page img {
-  width: 350px;
-  height: 350px;
+  width: auto;
+  height: auto;
   object-fit: cover;
   border-radius: 20px;
   cursor: pointer;
